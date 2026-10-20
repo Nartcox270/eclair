@@ -1,0 +1,5 @@
+# Compilation
+/target
+
+# Archives et installateurs : publiés dans les Releases GitHub, pas dans le dépôt
+/dist
