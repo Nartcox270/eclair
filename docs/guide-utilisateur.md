@@ -1,6 +1,6 @@
 # Éclair — Guide utilisateur
 
-Version 1.1.0
+Version 1.1.1
 
 Éclair est un utilitaire d'optimisation pour Windows 10 et Windows 11. Il regroupe dans une seule interface le nettoyage du disque, la gestion des priorités des programmes, les réglages Windows utiles au jeu, la confidentialité, les programmes lancés au démarrage et l'installation d'applications courantes.
 
@@ -42,7 +42,7 @@ Ce guide décrit l'installation, chaque écran de l'application, les précaution
 
 ### 2.1 Avec l'installateur (recommandé)
 
-1. Lancez `Eclair-Setup-1.1.0.exe`.
+1. Lancez `Eclair-Setup-1.1.1.exe`.
 2. Si Windows SmartScreen affiche « Windows a protégé votre ordinateur », cliquez sur **Informations complémentaires**, puis sur **Exécuter quand même**. Ce message apparaît parce que l'exécutable n'est pas signé numériquement ; il ne signale pas de problème détecté.
 3. Choisissez si l'installation concerne uniquement votre compte (par défaut, sans demande administrateur) ou tous les utilisateurs.
 4. Cochez éventuellement **Créer une icône sur le Bureau**.
@@ -52,14 +52,14 @@ Par défaut, Éclair est installé dans `%LOCALAPPDATA%\Programs\Eclair` et un r
 
 ### 2.2 Version portable
 
-L'archive `Eclair-v1.1.0.zip` contient `Eclair.exe`. Décompressez-la dans un dossier de votre choix et lancez l'exécutable. Aucune installation n'est nécessaire ; la désinstallation consiste à supprimer le dossier.
+L'archive `Eclair-v1.1.1.zip` contient `Eclair.exe`. Décompressez-la dans un dossier de votre choix et lancez l'exécutable. Aucune installation n'est nécessaire ; la désinstallation consiste à supprimer le dossier.
 
 ### 2.3 Installation silencieuse
 
 Pour un déploiement sans interface :
 
 ```
-Eclair-Setup-1.1.0.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CURRENTUSER
+Eclair-Setup-1.1.1.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CURRENTUSER
 ```
 
 ---

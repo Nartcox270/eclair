@@ -1,6 +1,6 @@
 # Éclair — Documentation technique
 
-Version 1.1.0
+Version 1.1.1
 
 Ce document décrit l'architecture d'Éclair, le rôle de chaque module, l'interface entre Rust et C++, les algorithmes du moteur de priorités, les modifications apportées à Windows, ainsi que les procédures de compilation, de test et de publication.
 
@@ -466,6 +466,8 @@ cargo build --release   # release : exécutable target\release\Eclair.exe
 3. intègre les ressources au binaire `Eclair` : `assets/app.rc` (icône) en debug, `assets/app-admin.rc` (icône et manifeste `requireAdministrator`) en release.
 
 Le manifeste administrateur n'est ajouté qu'en release afin que les versions de développement et les tests se lancent sans élévation.
+
+Le runtime C et C++ de Microsoft est lié statiquement (`.cargo/config.toml` : `target-feature=+crt-static`, que le crate `cc` applique aussi au code C++ avec `/MT`). L'exécutable ne dépend donc pas du Visual C++ Redistributable : il ne référence que des DLL fournies par Windows. Contrôle : `dumpbin /dependents target\release\Eclair.exe` ne doit lister ni `MSVCP140.dll` ni `VCRUNTIME140.dll`.
 
 ### 11.4 Logo
 

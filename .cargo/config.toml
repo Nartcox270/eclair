@@ -1,0 +1,4 @@
+# Runtime C/C++ de Microsoft intégré à l'exe : Éclair démarre sans le Visual C++ Redistributable.
+# Le crate `cc` suit ce réglage pour le code C++ (/MT au lieu de /MD).
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

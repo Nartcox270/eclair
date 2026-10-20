@@ -2,7 +2,7 @@
 ; Prérequis : cargo build --release
 
 #define AppName "Éclair"
-#define AppVersion "1.1.0"
+#define AppVersion "1.1.1"
 #define AppExe "Eclair.exe"
 
 [Setup]
